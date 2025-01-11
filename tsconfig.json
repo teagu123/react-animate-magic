@@ -1,7 +1,12 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+	"files": [],
+	"compilerOptions": {
+		"noEmit": false,
+		"declaration": true,
+		"outDir": "./dist",
+		"allowImportingTsExtensions": false
+	},
+	"include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts"],
+	"references": [{ "path": "./tsconfig.node.json" }]
+	//{ "path": "./tsconfig.app.json" },
 }
