@@ -1,12 +1,20 @@
 {
-	"files": [],
 	"compilerOptions": {
-		"noEmit": false,
-		"declaration": true,
-		"outDir": "./dist",
+		"target": "es5",
+		"useDefineForClassFields": true,
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"module": "ESNext",
+		"skipLibCheck": true,
+
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+
+		"noEmit": false, //출력을 보내보내는가?? 배포를 위해서는 출력을 해야한다.
+		"declaration": true, //.d.ts 파일을 생성 경로
+		"outDir": "./dist", //tsc 명령어로 컴파일 된 파일이 위치할 곳. ./dist에 서렂ㅇ
 		"allowImportingTsExtensions": false
 	},
-	"include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts"],
-	"references": [{ "path": "./tsconfig.node.json" }]
-	//{ "path": "./tsconfig.app.json" },
+	"include": ["./src/lib/**/*.tsx", "./src/lib/**/*.ts"] // 컴파일 파일 패턴
 }
