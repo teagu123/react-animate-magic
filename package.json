@@ -1,6 +1,6 @@
 {
 	"name": "react-animate-magic",
-	"version": "0.0.14",
+	"version": "1.0.1",
 	"private": false,
 	"type": "module",
 	"main": "dist/index.js",
@@ -14,8 +14,6 @@
 	},
 	"scripts": {
 		"dev": "vite",
-		"build:ts": "tsc",
-		"build:vite": "vite build",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
 		"preview": "vite preview",
