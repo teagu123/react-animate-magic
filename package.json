@@ -1,6 +1,6 @@
 {
 	"name": "react-animate-magic",
-	"version": "0.0.7",
+	"version": "0.0.13",
 	"private": false,
 	"type": "module",
 	"main": "dist/index.js",
