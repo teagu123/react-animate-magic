@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import * as path from 'path'
+import dts from 'vite-plugin-dts'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -23,5 +24,5 @@ export default defineConfig({
 			esmExternals: ['react', 'react-dom'],
 		},
 	},
-	plugins: [react()],
+	plugins: [react(), dts()],
 })

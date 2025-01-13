@@ -8,12 +8,12 @@ import * as S from './styled'
  */
 
 interface PropsType {
-	$duration?: number
+	duration?: number
 	children?: React.ReactNode
 }
 
-function FadeOut({ $duration = 5000, children }: PropsType) {
-	return <S.Wrapper $duration={$duration}>{children}</S.Wrapper>
+function FadeOut({ duration = 5000, children }: PropsType) {
+	return <S.Wrapper $duration={duration}>{children}</S.Wrapper>
 }
 
 export default FadeOut
